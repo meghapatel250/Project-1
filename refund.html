@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Features</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--FONT AWESOME-->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"/>
+     <style>
+        .header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(2, 41, 68, 0.8) var(--gradient-percent), rgba(154, 198, 229, 1) 100%);
+  color: white;
+}
+
+.inner-header {
+  height: 55vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+/* Animation */
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.bg-gray {
+    background-color: #f9f9f9;
+}
+
+.site-heading h2 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.site-heading h2 span {
+  color: #002347;
+}
+
+.site-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.site-heading h4::before {
+  background: #002347 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.site-heading {
+  margin-bottom: 60px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+.site-heading p{
+    text-align: justify;
+}
+.carousel-shadow .owl-stage-outer {
+  margin: -15px -15px 0;
+  padding: 15px;
+}
+
+.we-offer-area .our-offer-carousel .owl-dots .owl-dot span {
+  background: #ffffff none repeat scroll 0 0;
+  border: 2px solid;
+  height: 15px;
+  margin: 0 5px;
+  width: 15px;
+}
+
+.we-offer-area .our-offer-carousel .owl-dots .owl-dot.active span {
+  background: #002347 none repeat scroll 0 0;
+  border-color: #002347;
+}
+
+.we-offer-area .item {
+  background: #ffffff none repeat scroll 0 0;
+  border-left: 2px solid #002347;
+  -moz-box-shadow: 0 0 10px #cccccc;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+  -o-box-shadow: 0 0 10px #cccccc;
+  box-shadow: 0 0 10px #cccccc;
+  overflow: hidden;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.we-offer-area.text-center .item {
+  background: #ffffff none repeat scroll 0 0;
+  border: medium none;
+  padding: 67px 40px 64px;
+}
+
+.we-offer-area.text-center .item i {
+  background: #002347 none repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 40px;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  text-align: center;
+  width: 80px;
+  z-index: 1;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  margin-bottom: 25px;
+}
+
+.we-offer-area.text-center .item i::after {
+  border: 2px solid #002347;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  content: "";
+  height: 90px;
+  left: -5px;
+  position: absolute;
+  top: -5px;
+  width: 90px;
+  z-index: -1;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.we-offer-area.item-border-less .item {
+  border: medium none;
+}
+
+.we-offer-area .our-offer-items.less-carousel .equal-height {
+  margin-bottom: 30px;
+}
+
+.we-offer-area.item-border-less .item .number {
+  font-family: "Poppins",sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  opacity: 0.1;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item,
+.we-offer-area.center-active .single-item:nth-child(2n) .item {
+  background: #002347 none repeat scroll 0 0;
+}
+
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item i,
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item h4,
+.our-offer-carousel.center-active .owl-item:nth-child(2n) .item p,
+.we-offer-area.center-active .single-item:nth-child(2n) .item i,
+.we-offer-area.center-active .single-item:nth-child(2n) .item h4,
+.we-offer-area.center-active .single-item:nth-child(2n) .item p {
+  color: #ffffff;
+}
+
+.we-offer-area .item i {
+  color: #002347;
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.wem-offer-area .ite h4 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.we-offer-area .item p {
+  margin: 0;
+}
+
+.we-offer-area .item i,
+.we-offer-area .item h4,
+.we-offer-area .item p {
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.we-offer-area .item::after {
+  background: #002347 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  width: 100%;
+  z-index: -1;
+}
+
+.we-offer-area .item:hover::after {
+  left: 0;
+}
+
+.we-offer-area .item:hover i,
+.we-offer-area .item:hover h4,
+.we-offer-area .item:hover p {
+  color: #ffffff !important;
+}
+
+.we-offer-area.text-center .item:hover i::after {
+  border-color: #ffffff !important;
+}
+
+.we-offer-area.text-center .item:hover i {
+  background-color: #ffffff !important;
+  color: #002347 !important;
+}
+
+.we-offer-area.text-left .item i {
+  background: #002347 none repeat scroll 0 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 60px;
+  height: 100px;
+  line-height: 100px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100px;
+  z-index: 1;
+  text-align: center;
+}
+
+.we-offer-area.text-left .item i::after {
+  border: 2px solid #002347;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  content: "";
+  height: 120px;
+  left: -10px;
+  position: absolute;
+  top: -10px;
+  width: 120px;
+}
+
+
+ .footer-links .l5:before {
+      content: "\f577";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  
+  .footer-links .l6:before {
+      content: "\f15b";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  
+  .footer-links .l4:before {
+      content: "\f674";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  
+  
+  .footer-links .l7:before {
+      content: "\f53c";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  
+  .footer-category .a1:before {
+      content: "\f095";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  
+  .footer-category .a2:before {
+      content: "\f0e0";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  
+  .footer-category .a3:before {
+      content: "\f3c5";
+      font-family: 'FontAwesome';
+      padding-right: 10px;
+      color: #FDD82B;
+  }
+  .hft-wrapper{
+      float:left;
+      width:100%;
+      height:650px;
+      background:white;
+      position:relative;
+  }
+  .hft-wrapper h4{
+      text-align:center;
+      margin-top:30px;
+      margin-bottom:20px;
+  }
+  .hft-wrapper p{
+      text-align:justify;
+      
+  }
+  .hft-wrapper .hft-list{
+      margin:10px;
+      list-style-type:none;
+      text-align:justify;
+      color:white;
+  }
+  .hft-wrapper .hft-list li{
+      margin:6px;
+      
+  }
+  .hft-box{
+          background: #002347 none repeat scroll 0 0;
+    border: medium none;
+  width:460px;
+  height:220px;
+    box-shadow: 0 0 10px #00234769;
+     margin-left:300px;
+     margin-top:20px;
+     margin-bottom:30px;
+     border-radius:12px;
+  }
+   <!--Privacy-->
+  .privacy-wrapper{
+      width:100%;
+      float:left;
+      position:relative;
+  }
+  .privacy-wrapper h4{
+   color:#002347;
+   font-weight:bold;
+   margin-bottom:12px;
+   margin-top:8px;
+  }
+  .privacy-list li{
+      margin:5px;
+      margin-left:10px;
+  }
+  .pr1{
+      margin-top:50px;
+  }
+  .refund-wrapper{
+        width:100%;
+      position:relative;
+  }
+  .refund-wrapper.pr1{
+      margin-top:50px;
+  }
+  
+     </style>
+      <!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <!--TOP MENU-->
+<menu class="top_menu flex">
+    <section class="flex_content">
+        <a href="emailto:info@algo-tech.co.in">
+            <i class="fa fa-envelope-o"></i>
+           info@algo-tech.co.in
+        </a>
+        <a href="tel:1234567890">
+            <i class="fa fa-headphones"></i>
+            1234567890
+        </a>
+    </section>
+    <section class="flex_content">
+        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="youtube"><i class="fab fa-youtube"></i></a>
+    </section>
+  </menu>
+  
+   <!--NAV-->
+  <nav class="flex">
+    <section class="flex_content">
+        <figure class="logo fixed_flex">
+            <img src="https://i.postimg.cc/02NrFwT5/canva.png" alt="">
+            <figcaption>
+                <strong class="title">ALGO</strong>tech
+            </figcaption>
+        </figure>
+    </section>
+    <section class="flex_content nav_content" id="nav_content">
+        <a href="index.html" class="active">Home</a>
+         <a href="AboutUs.html">About us</a>
+          <a href="features.html">Features</a>
+        <a href="price.html">Price</a>
+        <a href="book_demo.html">Book Demo</a>
+         <a href="hft.html" >HFT</a>
+        <a href="contact us.html" class="contact_btn">Contact us</a>
+       
+    </section>
+    <section class="flex_content">
+        <a href="javascript:void(0)" class="ham"><i class="fa fa-bars"></i></a>
+    </section>
+  </nav>
+  
+  <!--MENU-->
+  <menu id="menu" class="side_menu">
+    <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a>
+    <strong class="fixed_flex logo"><img src="https://i.postimg.cc/02NrFwT5/canva.png" alt="Summit"  loading="lazy" /></strong>
+    <br>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="AboutUs.html">About us</a></li>
+        
+        <li><a href="features.html">Features</a></li>
+        
+        <li><a href="price.html">Price</a></li>
+        
+        <li><a href="book_demo.html">Book Demo</a></li>
+        
+         <li><a href="hft.html">HFT</a></li>
+        
+        <li><a href="contact us.html">Contact Us</a></li>
+        
+        
+    </ul>
+  </menu>
+
+  <!-- header -->
+  <div class="header">
+    <div class="inner-header flex">
+        <h1>Refund and Cancellation Policy</h1>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+
+</div>
+ 
+   <!--Refund Policy-->
+   <div class="refund-wrapper">
+     <div class="container">
+          <div class="row">
+ 
+ <p class="pr1">All subscription fees paid to Algo Tech are not refundable.</p>
+<p>We do not provide trading tips nor we are investment advisers.
+Our service is solely restricted to automated trading application development, deployment, and maintenance.
+The information provided on this website or associated services are neither replacement for a professional “investment adviser” nor it claims to be a substitute for “financial planning”.
+We strongly advise you to take consulting from SEBI recognized “investment adviser” before deciding what percentage of your asset can be exposed to the equity market.
+Advice received via this website or our services should not be relied upon for personal, medical, legal, or financial decisions.
+All such information, software, products, services, and related graphics are provided “AS IS” without a warranty of any kind.</p>
+<p>In no event shall Algo Tech be liable for any direct, indirect, punitive, incidental, special, consequential damages or any damages whatsoever including without limitation, damages for loss of use, data, or profits, arising out of or in any way connected with the use or performance of this website, with the delay or inability to use this website, the provision of or failure to provide services, or for any information, software, products, services and related graphics obtained through this website, or otherwise arising out of the use of this website, whether based on contract, tort, strict liability or otherwise, even if Algo tech has been advised of the possibility of damages.</p>
+<p>If you are dissatisfied with any portion of this website, or with any of these terms of use, your sole and exclusive remedy is to discontinue using this website and associated services. The stock market is subject to market risk.
+Please read the associated document carefully or take help from SEBI recognized professionals to understand the finer points & details of the various financial products.
+All algorithms are based on backtested data but we do not provide any guarantee for their performance in the future.
+The algorithm running in an automated system is agreed upon with the user prior to deployment and we do not take any liability for any loss generated by the same.
+Past performance of advice/strategy/model does not indicate the future performance of any current or future strategy/model or advice by Algo Queen Trades and actual returns may differ significantly from that depicted herein due to various factors including but not limited to impact costs, expense charged, the timing of entry/exit, the timing of additional flows/redemptions, individual client mandates, specific portfolio construction characteristics, etc.
+There is no assurance or guarantee that the objectives of any strategy/model or advice provided by Algo Tech Trades will be achieved.
+Algo Tech Trades or any of its partner/s principal officer/employees do not assure/give a guarantee for any return on the investment in strategies/models/advice given to the Investor.
+The value of an investment can go up/down depending on factors & forces affecting securities markets.
+Algo tech Trades or its associates are not liable or responsible for any loss or shortfall arising from operations and affected by the market condition. By visiting info@algo-tech.co.in  you automatically indicate that you agree to Indemnity, Disclaimer & Disclosure Notice, and General Content Disclaimer Notice and indemnify www.Algotech.com, its associates, and related parties of all claims howsoever resulting from the usage of the forum/site.</p>
+
+<p>All names or products mentioned are trademarks or registered trademarks of their respective owners.</p>
+ 
+ </div>
+ 
+ </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+        <!--footer start-->
+       <footer>
+	<div class="footer-wrap">
+
+		<div class="second_class">
+			<div class="container second_class_bdr">
+			<div class="row">
+				<div class="col-md-5 col-sm-6">
+
+					<div class="footer-logo"><img src="https://i.postimg.cc/02NrFwT5/canva.png" alt="logo">
+					</div>
+					<p>Your one-stop career platform to find Jobs, Internships, Professional Trainings, Projects, and Volunteering Opportunities.</p>
+				</div>
+				<div class="col-md-3 col-sm-6 col-6">
+					<h3>Quick  LInks</h3>
+					<ul class="footer-links">
+					
+						<li class="l4" ><a href="#">Contact Us</a>
+						</li>
+						<li class="l5" ><a href="terms.html" target="_blank">Terms &amp; Conditions</a>
+						</li>
+						<li class="l6" ><a href="privacy.html" target="_blank">Privacy Policy</a>
+						</li>
+							<li class="l7" ><a href="refund.html" target="_blank">Refund Policy</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-4 col-sm-6 col-6">
+					<h3>Keep In Touch Any Time</h3>
+					<ul class="footer-category">
+						<li class="a1"><a href="#">1234567890</a>
+						</li>
+						<li class="a2"><a href="#"> info@algo-tech.co.in </a>
+						</li>
+						<li class="a3"><a href="#">139, Shyamprasad Mukharji, Ward no.7, Nr. Bangali Square, Indore (M.P.) - 452001</a>
+						</li>
+						
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				
+			</div>
+			
+		</div>
+		</div>
+		
+		<div class="row">
+			
+			<div class="container-fluid">
+			<div class="copyright"> Copyright 2019 | All Rights Reserved by ALGO Tech</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	</footer>
+        <!--footer end-->
+            <!-- Optional JavaScript -->
+            <script>
+                let root = document.documentElement;
+        const section1 = document.querySelector('.header')
+        
+        window.addEventListener('load', () => {
+          const y = 1 + (window.scrollY || window.pageYOffset); 
+           root.style.setProperty('--gradient-percent', y * 4 + "px");
+          console.log(y)
+        })
+            </script>
+            <script src="script.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/main.js"></script>   
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
